@@ -6,11 +6,9 @@ import { fetchProduct } from '@/store/productSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import Image from 'next/image';
 import Link from 'next/link';
-import { montserrat, oswald } from '@/app/layout';
+import { montserrat, oswald } from '../../layout';
 import CartBtn from '@/components/cart-btn';
 import { fetchCart } from '@/store/cartSlice';
-import CartModal from '@/components/cartmodal';
-import ErrorComp from '@/components/error';
 import AddCart from '@/components/addCart';
 
 export default function ProductItem({ params }) {
@@ -89,7 +87,7 @@ export default function ProductItem({ params }) {
                           </>
                         ))
                       }
-                      <span className='l line-clamp-1 truncate'>{ product.name }</span>
+                      <span className='truncate l line-clamp-1'>{ product.name }</span>
                     </div>
 
                     <div className={`flex text-textGray ${montserrat.className} text-md capitalize mt-5`}>

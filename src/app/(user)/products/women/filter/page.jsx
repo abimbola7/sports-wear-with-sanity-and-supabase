@@ -1,6 +1,6 @@
 "use client"
 
-import { montserrat, oswald } from '@/app/layout';
+import { montserrat, oswald } from '@/app/(user)/layout';
 import Card from '@/components/card';
 import Editbar from '@/components/editbar';
 import RowCard from '@/components/row-card';
@@ -30,7 +30,7 @@ export default function FilterWomen({ params, searchParams }) {
       <h1 className={`${oswald.className} font-medium text-4xl !mb-3`}>Active Filter</h1>
       <span className='font-light'>Min ${searchParams.minValue}</span>
       <span  className='ml-3 font-light'>Max ${searchParams.maxValue}</span>
-      <Link href="/products/women" className="bg-darkOrange py-3 text-white block px-3 rounded-3xl w-fit hover:bg-opacity-50">Cancel Filter</Link>
+      <Link href="/products/women" className="block px-3 py-3 text-white bg-darkOrange rounded-3xl w-fit hover:bg-opacity-50">Cancel Filter</Link>
     </div>
     {
           isLoading && !error && !products && (

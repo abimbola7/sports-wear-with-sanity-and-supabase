@@ -3,7 +3,7 @@
 import React from 'react'
 import { useFetchType } from '@/hooks/api'
 import Link from 'next/link';
-import { montserrat, oswald } from '@/app/layout';
+import { montserrat } from '../../layout';
 import Editbar from '@/components/editbar';
 import Card from '@/components/card';
 import RowCard from '@/components/row-card';
@@ -37,7 +37,7 @@ export default function FilterTerm({ params, searchParams }) {
         <span  className='ml-3 font-light'>Max ${maxValue}</span>
         <Link 
         href={`/search?searchTerm=${searchTerm}`} 
-        className="bg-darkOrange py-3 text-white block px-3 rounded-3xl w-fit hover:bg-opacity-50">Cancel Filter</Link>
+        className="block px-3 py-3 text-white bg-darkOrange rounded-3xl w-fit hover:bg-opacity-50">Cancel Filter</Link>
       </div>
       )
     }
