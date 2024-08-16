@@ -23,6 +23,11 @@ export const products = {
       type : "number",
     },
     {
+      name : "amount",
+      title : "Amount",
+      type : "number",
+    },
+    {
       name : "description",
       title : 'Description',
       type : "blockContent"
