@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* *{
+  outline: 1px solid red;
+} */
+
+
+@layer components {
+  .icons {
+    @apply absolute right-3 text-textGray text-xl top-4 p-1 bg-white rounded-full cursor-pointer hidden group-hover:block hover:text-customBlack  
+  }
+  .icon {
+    @apply  text-2xl transition-transform hover:scale-125 duration-150 ease-out cursor-pointer;
+  }
+  .btn {
+    @apply w-full px-4 py-3 font-semibold text-white uppercase bg-darkOrange rounded-3xl
+
+  }
+}
+
+body {
+  background-color : transparent !important
+}
+
+html::-webkit-scrollbar {
+  display : none;
+} 
+
+html {
+  scrollbar-width: none;
+}
+
+.collection {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.767)), url(https://firebasestorage.googleapis.com/v0/b/sport-wear-store.appspot.com/o/sports-wear-store-collection-bg-img.jpg?alt=media&token=cd869ab8-fb19-41be-b1e5-af3fd6f98378);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+
+input.inputt:valid {
+  background-color: red;
+}
+
+
+@media (max-width:768px) {
+  .collection {
+    background-color: rgba(0, 0, 0, 0.747);
+    background-position-y: 500px;
+  }
+}
