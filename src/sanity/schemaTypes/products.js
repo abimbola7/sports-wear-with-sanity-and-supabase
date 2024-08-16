@@ -43,6 +43,21 @@ export const products = {
       ]
     },
     {
+      name : "tags",
+      title : "Tags",
+      type : "array",
+      of : [
+        {
+          type : "reference",
+          to : [
+            {
+              type : "tags"
+            }
+          ]
+        }
+      ]
+    },
+    {
       name : "image",
       title : "Image",
       type : "image",
